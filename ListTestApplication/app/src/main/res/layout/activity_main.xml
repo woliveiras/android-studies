@@ -14,18 +14,26 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="br.com.woliveiras.listtestapplication.MainActivity">
 
+        <fragment
+            android:id="@+id/fragment_palestra1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="br.com.woliveiras.listtestapplication.PalestraFragment"
+            tools:layout="@layout/speaker_list_item" />
 
-        <include layout="@layout/speaker_list_item"/>
+        <fragment
+            android:id="@+id/fragment_palestra2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:name="br.com.woliveiras.listtestapplication.PalestraFragment"
+            tools:layout="@layout/speaker_list_item" />
 
         <include layout="@layout/speaker_list_item"
             android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:id="@+id/palestra3"/>
 
         <include layout="@layout/speaker_list_item"
             android:layout_height="match_parent"
