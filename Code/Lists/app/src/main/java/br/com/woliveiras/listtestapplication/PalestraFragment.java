@@ -8,13 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import br.com.woliveiras.listtestapplication.models.Palestra;
+
 
 public class PalestraFragment extends Fragment {
-    private static final String ARG_PARAM1 = "titulo";
-    private static final String ARG_PARAM2 = "autor";
 
-    private String mParam1;
-    private String mParam2;
+    private static final String ARG_PALESTRA = "palestra";
+    private Palestra palestra;
     private TextView tvTitulo;
     private TextView tvAutor;
 
@@ -23,11 +23,10 @@ public class PalestraFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static PalestraFragment newInstance(String param1, String param2) {
+    public static PalestraFragment newInstance(Palestra palestra) {
         PalestraFragment fragment = new PalestraFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putSerializable(ARG_PALESTRA, palestra);
         fragment.setArguments(args);
         return fragment;
     }
@@ -35,6 +34,10 @@ public class PalestraFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            palestra = (Palestra) getArguments().getSerializable(ARG_PALESTRA);
+        }
 
     }
 
@@ -47,13 +50,18 @@ public class PalestraFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         tvTitulo = (TextView) view.findViewById(R.id.tv_titulo);
         tvAutor = (TextView) view.findViewById(R.id.tv_autor);
+
+        bindViews(palestra);
     }
 
-    public void setTitulo(String titulo) {
-        tvTitulo.setText(titulo);
+    public void setPalestra(Palestra palestra) {
+        this.palestra = palestra;
+        bindViews(palestra);
+
     }
 
-    public void setAutor(String autor) {
-        tvAutor.setText("Autor: " + autor);
+    public void bindViews(Palestra palestra) {
+        tvTitulo.setText(palestra.getTitulo());
+        tvAutor.setText(palestra.getAutor());
     }
 }
