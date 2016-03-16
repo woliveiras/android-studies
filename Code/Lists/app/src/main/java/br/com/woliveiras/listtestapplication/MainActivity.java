@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private PalestraFragment fragmentPalestra1;
     private PalestraFragment fragmentPalestra2;
+    private PalestraFragment fragmentPalestra3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +19,20 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentPalestra1 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra1);
         fragmentPalestra2 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra2);
+        fragmentPalestra2 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra3);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
         fragmentPalestra1.setTitulo("Bind de Views no Android");
         fragmentPalestra1.setAutor("WOliveiraS");
 
-        fragmentPalestra2.setTitulo("Android vs iOS");
-        fragmentPalestra2.setAutor("Teles");
+        fragmentPalestra2.setTitulo("React é vida! React <3");
+        fragmentPalestra2.setAutor("Jota Teles");
+
+        fragmentPalestra2.setTitulo("Java é foda!");
+        fragmentPalestra2.setAutor("Dinesh Trivedi");
     }
 }

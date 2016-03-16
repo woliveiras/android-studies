@@ -29,37 +29,18 @@
             android:name="br.com.woliveiras.listtestapplication.PalestraFragment"
             tools:layout="@layout/speaker_list_item" />
 
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
+        <fragment
+            android:id="@+id/fragment_palestra3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:id="@+id/palestra3"/>
+            android:name="br.com.woliveiras.listtestapplication.PalestraFragment"
+            tools:layout="@layout/speaker_list_item" />
 
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-        <include layout="@layout/speaker_list_item"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"/>
-
-
+        <!--<include layout="@layout/speaker_list_item"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:id="@+id/palestra3"/>-->
     </LinearLayout>
 </ScrollView>

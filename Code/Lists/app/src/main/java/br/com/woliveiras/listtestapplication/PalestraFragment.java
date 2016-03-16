@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 
 public class PalestraFragment extends Fragment {
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_PARAM1 = "titulo";
+    private static final String ARG_PARAM2 = "autor";
 
     private String mParam1;
     private String mParam2;
