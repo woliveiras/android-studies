@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication;
+package br.com.woliveiras.listtestapplication.fragments;
 
 
 import android.os.Bundle;
@@ -8,13 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import br.com.woliveiras.listtestapplication.R;
 import br.com.woliveiras.listtestapplication.models.Palestra;
 
 
 public class PalestraFragment extends Fragment {
 
     private static final String ARG_PALESTRA = "palestra";
+    public static final String TYPE = "type";
+
+    public static final int LIST_TYPE = 100;
+    public static final int PAGER_TYPE = 110;
+
     private Palestra palestra;
+    private int type;
     private TextView tvTitulo;
     private TextView tvAutor;
 
@@ -23,10 +30,11 @@ public class PalestraFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static PalestraFragment newInstance(Palestra palestra) {
+    public static PalestraFragment newInstance(Palestra palestra, int type) {
         PalestraFragment fragment = new PalestraFragment();
         Bundle args = new Bundle();
         args.putSerializable(ARG_PALESTRA, palestra);
+        args.putInt(TYPE, type);
         fragment.setArguments(args);
         return fragment;
     }
@@ -37,13 +45,25 @@ public class PalestraFragment extends Fragment {
 
         if (getArguments() != null) {
             palestra = (Palestra) getArguments().getSerializable(ARG_PALESTRA);
+            type = getArguments().getInt(TYPE);
         }
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.speaker_list_item, container, false);
+        View view = null;
+
+        switch (type) {
+            case LIST_TYPE:
+                view = inflater.inflate(R.layout.speaker_list_item, container, false);
+                break;
+
+            case PAGER_TYPE:
+                view = inflater.inflate(R.layout.speaker_pager_item, container, false);
+        }
+
+        return view;
     }
 
     @Override
