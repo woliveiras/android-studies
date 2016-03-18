@@ -16,10 +16,5 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         ViewPager pagerPalestras = (ViewPager) findViewById(R.id.pager_palestras);
         pagerPalestras.setAdapter(new PalestrasPagerAdapter(getSupportFragmentManager()));
-
-
     }
-
-
-
 }

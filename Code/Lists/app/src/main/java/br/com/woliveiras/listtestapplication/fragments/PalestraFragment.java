@@ -11,7 +11,6 @@ import android.widget.TextView;
 import br.com.woliveiras.listtestapplication.R;
 import br.com.woliveiras.listtestapplication.models.Palestra;
 
-
 public class PalestraFragment extends Fragment {
 
     private static final String ARG_PALESTRA = "palestra";
@@ -47,7 +46,6 @@ public class PalestraFragment extends Fragment {
             palestra = (Palestra) getArguments().getSerializable(ARG_PALESTRA);
             type = getArguments().getInt(TYPE);
         }
-
     }
 
     @Override
@@ -70,14 +68,12 @@ public class PalestraFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         tvTitulo = (TextView) view.findViewById(R.id.tv_titulo);
         tvAutor = (TextView) view.findViewById(R.id.tv_autor);
-
         bindViews(palestra);
     }
 
     public void setPalestra(Palestra palestra) {
         this.palestra = palestra;
         bindViews(palestra);
-
     }
 
     public void bindViews(Palestra palestra) {

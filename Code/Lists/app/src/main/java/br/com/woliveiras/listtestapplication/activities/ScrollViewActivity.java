@@ -9,44 +9,30 @@ import br.com.woliveiras.listtestapplication.R;
 import br.com.woliveiras.listtestapplication.models.Palestra;
 
 public class ScrollViewActivity extends AppCompatActivity {
-
-    private PalestraFragment fragmentPalestra1;
-    private PalestraFragment fragmentPalestra2;
-    private PalestraFragment fragmentPalestra3;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_palestra_list);
 
-        //LinearLayout mainContainer = (LinearLayout) findViewById(R.id.main_container);
-
-        Palestra palestra = new Palestra()
+        Palestra palestra1 = new Palestra()
                 .setTitulo("Bind de views no Android")
                 .setAutor("William Oliveira");
 
-        PalestraFragment palestraFragment = PalestraFragment.newInstance(palestra, PalestraFragment.LIST_TYPE);
+        Palestra palestra2 = new Palestra()
+                .setTitulo("React é lindo!")
+                .setAutor("Jota Teles");
+
+        PalestraFragment palestraFragment1 = PalestraFragment.newInstance(palestra1, PalestraFragment.LIST_TYPE);
+        PalestraFragment palestraFragment2 = PalestraFragment.newInstance(palestra2, PalestraFragment.LIST_TYPE);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_container, palestraFragment);
+        fragmentTransaction.add(R.id.main_container, palestraFragment1);
+        fragmentTransaction.add(R.id.main_container, palestraFragment2);
         fragmentTransaction.commit();
-
-//        fragmentPalestra1 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra1);
-//        fragmentPalestra2 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra2);
-//        fragmentPalestra3 = (PalestraFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_palestra3);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
-//        fragmentPalestra1.setTitulo("Bind de Views no Android");
-//        fragmentPalestra1.setAutor("WOliveiraS");
-//
-//        fragmentPalestra2.setTitulo("React é vida! React <3");
-//        fragmentPalestra2.setAutor("Jota Teles");
-//
-//        fragmentPalestra3.setTitulo("Java é foda!");
-//        fragmentPalestra3.setAutor("Dinesh Trivedi");
     }
 }
