@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.woliveiras.listtestapplication">
+    package="br.com.woliveiras.listsapplication">
 
     <application
         android:allowBackup="true"
@@ -8,11 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ScrollViewActivity">
+        <activity android:name="br.com.woliveiras.listsapplication.activities.ScrollViewActivity">
 
         </activity>
         <activity
-            android:name=".activities.MainActivity"
+            android:name="br.com.woliveiras.listsapplication.activities.MainActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.ViewPagerActivity"
+            android:name="br.com.woliveiras.listsapplication.activities.ViewPagerActivity"
             android:label="@string/title_activity_view_pager">
 
         </activity>

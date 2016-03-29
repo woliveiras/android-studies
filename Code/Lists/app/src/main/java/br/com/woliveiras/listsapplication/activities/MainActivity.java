@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication.activities;
+package br.com.woliveiras.listsapplication.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import br.com.woliveiras.listtestapplication.R;
+import br.com.woliveiras.listsapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication.adapters;
+package br.com.woliveiras.listsapplication.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -7,8 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.woliveiras.listtestapplication.fragments.PalestraFragment;
-import br.com.woliveiras.listtestapplication.models.Palestra;
+import br.com.woliveiras.listsapplication.fragments.PalestraFragment;
+import br.com.woliveiras.listsapplication.models.Palestra;
 
 /**
  * Created by williamsouza on 3/17/16.

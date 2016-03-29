@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication;
+package br.com.woliveiras.listsapplication;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

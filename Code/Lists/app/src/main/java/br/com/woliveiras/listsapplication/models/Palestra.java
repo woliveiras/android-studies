@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication.models;
+package br.com.woliveiras.listsapplication.models;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication;
+package br.com.woliveiras.listsapplication;
 
 import org.junit.Test;
 

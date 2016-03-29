@@ -1,4 +1,4 @@
-package br.com.woliveiras.listtestapplication.fragments;
+package br.com.woliveiras.listsapplication.fragments;
 
 
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import br.com.woliveiras.listtestapplication.R;
-import br.com.woliveiras.listtestapplication.models.Palestra;
+import br.com.woliveiras.listsapplication.models.Palestra;
+import br.com.woliveiras.listsapplication.R;
 
 public class PalestraFragment extends Fragment {
 

@@ -1,12 +1,12 @@
-package br.com.woliveiras.listtestapplication.activities;
+package br.com.woliveiras.listsapplication.activities;
 
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import br.com.woliveiras.listtestapplication.fragments.PalestraFragment;
-import br.com.woliveiras.listtestapplication.R;
-import br.com.woliveiras.listtestapplication.models.Palestra;
+import br.com.woliveiras.listsapplication.fragments.PalestraFragment;
+import br.com.woliveiras.listsapplication.R;
+import br.com.woliveiras.listsapplication.models.Palestra;
 
 public class ScrollViewActivity extends AppCompatActivity {
     @Override

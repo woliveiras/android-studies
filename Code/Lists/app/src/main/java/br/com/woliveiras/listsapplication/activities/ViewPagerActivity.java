@@ -1,11 +1,11 @@
-package br.com.woliveiras.listtestapplication.activities;
+package br.com.woliveiras.listsapplication.activities;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import br.com.woliveiras.listtestapplication.R;
-import br.com.woliveiras.listtestapplication.adapters.PalestrasPagerAdapter;
+import br.com.woliveiras.listsapplication.adapters.PalestrasPagerAdapter;
+import br.com.woliveiras.listsapplication.R;
 
 public class ViewPagerActivity extends AppCompatActivity {
 

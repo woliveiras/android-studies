@@ -13,13 +13,13 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".activities.ScrollViewActivity">
+        tools:context="br.com.woliveiras.listsapplication.activities.ScrollViewActivity">
 
         <!--<fragment-->
             <!--android:id="@+id/fragment_palestra1"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
-            <!--android:name="br.com.woliveiras.listtestapplication.fragments.PalestraFragment"-->
+            <!--android:name="PalestraFragment"-->
             <!--tools:layout="@layout/speaker_list_item" />-->
 
         <!--<fragment-->
@@ -27,7 +27,7 @@
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:layout_marginTop="16dp"-->
-            <!--android:name="br.com.woliveiras.listtestapplication.fragments.PalestraFragment"-->
+            <!--android:name="PalestraFragment"-->
             <!--tools:layout="@layout/speaker_list_item" />-->
 
         <!--<fragment-->
@@ -35,7 +35,7 @@
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:layout_marginTop="16dp"-->
-            <!--android:name="br.com.woliveiras.listtestapplication.fragments.PalestraFragment"-->
+            <!--android:name="PalestraFragment"-->
             <!--tools:layout="@layout/speaker_list_item" />-->
 
         <!--<include layout="@layout/speaker_list_item"-->
